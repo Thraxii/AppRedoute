@@ -1,4 +1,12 @@
 {
   "name": "AppRedoute",
-  "app_id": "3b48eaea"
+  "app_id": "3b48eaea",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }
