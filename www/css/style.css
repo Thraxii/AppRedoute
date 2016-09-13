@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+.bar-black{
+    background-color: black;
+    color: white;
+}
+
+p.pink,
+i.pink{
+    color: #DD1B7B
+}
+
+.pink-background{
+    background-color: #DD1B7B
+}
