@@ -1,15 +1,36 @@
-<ion-view view-title="Profil">
-  <ion-content>
+<ion-view title="Profil">
+  <ion-content class="padding">
+    <h3 class="titre">Bienvenue sur votre profil !</h3>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
+      <ion-item class="item-avatar dark">
+        <img src="img/eric.jpg">
+        <span class="explication">
+          <p>Vous pouvez ici voir et éditer vos informations personnelles.</p>
+        </span>
+      </ion-item>
+      <ion-item class="item-icon-right">Nom
+        <span class="item-note">Eric</span>
+        <i class="icon ion-edit icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right">Département
+        <span class="item-note">01</span>
+        <i class="icon ion-edit icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right">Société
+        <span class="item-note">Relais-Colis</span>
+        <i class="icon ion-edit icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right">E-mail
+        <span class="item-note">eric@relais-colis.fr</span>
+        <i class="icon ion-edit icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right">N° téléphone
+        <span class="item-note">non renseigné</span>
+        <i class="icon ion-edit icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right">Mot de passe
+        <span class="item-note">**********</span>
+        <i class="icon ion-edit icon-accessory"></i>
       </ion-item>
     </ion-list>
   </ion-content>
