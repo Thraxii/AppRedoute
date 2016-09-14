@@ -2,4 +2,4 @@
 
 controllerModule.controller('AccueilCtrl', function($scope) {
 
-})
+    })

@@ -29,7 +29,12 @@ h3.titre{
   text-align: center
 }
 
-.espace{
+.petit-espace {
     width: 300px;
     height: 13px;
+}
+
+.grand-espace {
+    width: 300px;
+    height: 28px;
 }
