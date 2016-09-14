@@ -44,7 +44,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/accueil',
     views: {
       'tab-accueil': {
-        templateUrl: 'templates/tab-accueil.html',
+        templateUrl: 'templates/accueil.html',
         controller: 'AccueilCtrl'
       }
     }
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/profil',
       views: {
         'tab-profil': {
-          templateUrl: 'templates/tab-profil.html',
+          templateUrl: 'templates/profil.html',
           controller: 'ProfilCtrl'
         }
       }
@@ -64,7 +64,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/aide',
     views: {
       'tab-aide': {
-        templateUrl: 'templates/tab-aide.html',
+        templateUrl: 'templates/aide.html',
         controller: 'AideCtrl'
       }
     }
