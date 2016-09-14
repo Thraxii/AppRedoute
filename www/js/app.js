@@ -1,12 +1,13 @@
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
+// 'app' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
-// 'starter.controllers' is found in accueil-ctrl.js, profil-ctrl.js and aide-ctrl.js
-var controllerModule = angular.module('starter.controllers', []);
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+// 'app.services' is found in services.js
+// 'app.controllers' is found in every file of controllers
+var controllerModule = angular.module('app.controllers', []);
+
+angular.module('app', ['ionic', 'app.controllers', 'app.services'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -34,11 +35,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
             .state('connexion', {
                 url: '/connexion',
-                views: {
-                    'connexion': {
-                        templateUrl: 'templates/connexion.html',
-                    }
-                }
+                templateUrl: 'templates/connexion.html',
+                controller: 'ConnexionCtrl'
+            })
+
+            .state('inscription', {
+                url: '/inscription',
+                templateUrl: 'templates/inscription.html',
+                controller: 'InscriptionCtrl'
             })
 
         // setup an abstract state for the tabs directive
@@ -69,6 +73,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             })
 
+            .state('tab.confirmation', {
+                url: '/confirmation',
+                views: {
+                    'tab-accueil': {
+                        templateUrl: 'templates/confirmation.html',
+                    }
+                }
+            })
+
             .state('tab.profil', {
                 url: '/profil',
                 views: {
@@ -79,14 +92,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             })
 
-            .state('tab.confirmation', {
-                url: '/confirmation',
-                views: {
-                    'tab-accueil': {
-                        templateUrl: 'templates/confirmation.html',
-                    }
-                }
-            })
 
             .state('tab.aide', {
                 url: '/aide',
