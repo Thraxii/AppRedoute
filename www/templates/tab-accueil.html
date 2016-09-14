@@ -1,7 +1,55 @@
-<ion-view view-title="Accueil">
-  <ion-content>
-    <h3>
-    Signaler une avarie
-    </h3>
+<ion-view title="Accueil">
+  <ion-content class="padding">
+    <h3 class="titre">Signaler une avarie</h3>
+    <form class="list">
+      <div class="explication">
+        <p>Vous pouvez signaler une avarie sur un colis ou bien sur toute une palette.</p>
+      </div>
+      <label class="item item-select">
+        <span class="input-label">Colis ou palette ?</span>
+        <select>
+          <option>Colis</option>
+          <option>Palette</option>
+        </select>
+      </label>
+      <label class="item item-select">
+        <span class="input-label">Type de colis</span>
+        <select>
+          <option>Meuble</option>
+          <option>Canapé</option>
+          <option>Literie</option>
+        </select>
+      </label>
+      <a ui-sref="tabsController.flash" id="flash-button" class="button button-dark  button-block icon-left ion-ios-barcode">Flasher</a>
+    </form>
+    <form class="list">
+      <label class="item item-input" id="accueil-input8">
+        <input type="text" placeholder="Ou saisir la référence manuellement">
+      </label>
+    </form>
+    <div class="explication">
+      <p>Sélectionner la ou les avaries :</p>
+    </div>
+    <form class="list">
+      <ion-checkbox>Emballage inexistant</ion-checkbox>
+      <ion-checkbox>Emballage abîmé</ion-checkbox>
+      <ion-checkbox>Non respect des pictogrammes</ion-checkbox>
+      <ion-checkbox>Autre</ion-checkbox>
+      <label class="item item-input">
+        <input type="text" placeholder="Si &quot;Autre&quot;, préciser">
+      </label>
+      <a ui-sref="tabsController.photo" id="photo-button" class="button button-dark  button-block icon-left ion-android-camera">Ajouter une photo</a>
+      <div id="accueil-markdown9" class="explication">
+        <p>Indications sur les photos à prendre pour la ou les avaries sélectionnées</p>
+      </div>
+      <ion-item class="item-thumbnail-left">
+        <img src="img/rW7C4Js6QFmR5nk6JFUu_colis.jpg">
+        <h2>Photo 1</h2>
+      </ion-item>
+      <label class="item item-input">
+        <span class="input-label">Commentaire</span><textarea placeholder="..."></textarea>
+      </label>
+      <a ui-sref="tabsController.confirmation" id="accueil-button13" class="button button-dark  button-block">Envoyer</a>
+    </form>
   </ion-content>
 </ion-view>

@@ -12,3 +12,18 @@ i.pink{
 .pink-background{
     background-color: #DD1B7B
 }
+
+h3.black,
+div.black{
+  color: black;
+}
+
+div.explication{
+  color: #DD1B7B;
+  font-size: 16px
+}
+
+h3.titre{
+  color: black;
+  text-align: center
+}
