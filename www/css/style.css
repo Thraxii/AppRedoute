@@ -19,7 +19,9 @@ div.black{
 }
 
 span.explication,
-div.explication{
+div.explication,
+p.explication
+{
   color: #DD1B7B;
   font-size: 16px
 }
