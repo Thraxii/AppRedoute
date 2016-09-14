@@ -8,8 +8,8 @@
 var controllerModule = angular.module('starter.controllers', []);
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
-    .run(function($ionicPlatform) {
-        $ionicPlatform.ready(function() {
+    .run(function ($ionicPlatform) {
+        $ionicPlatform.ready(function () {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
@@ -24,7 +24,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         });
     })
 
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $urlRouterProvider) {
 
         // Ionic uses AngularUI Router which uses the concept of states
         // Learn more here: https://github.com/angular-ui/ui-router
@@ -51,12 +51,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             })
 
-
-            .state('tab.confirmation', {
-                url: '/confirmation',
+            .state('tab.flash', {
+                url: '/flash',
                 views: {
                     'tab-accueil': {
-                        templateUrl: 'templates/confirmation.html',
+                        templateUrl: 'templates/flash.html'
                     }
                 }
             })
@@ -67,6 +66,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                     'tab-profil': {
                         templateUrl: 'templates/profil.html',
                         controller: 'ProfilCtrl'
+                    }
+                }
+            })
+
+            .state('tab.confirmation', {
+                url: '/confirmation',
+                views: {
+                    'tab-accueil': {
+                        templateUrl: 'templates/confirmation.html',
                     }
                 }
             })
