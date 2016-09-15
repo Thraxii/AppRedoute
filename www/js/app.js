@@ -80,7 +80,8 @@ angular.module('app', ['ionic', 'app.controllers', 'app.services'])
                 views: {
                     'tab-profil': {
                         templateUrl: 'templates/profil.html',
-                        controller: 'ProfilCtrl'
+                        controller: 'ProfilCtrl',
+                        controllerAs: 'vm'
                     }
                 }
             })

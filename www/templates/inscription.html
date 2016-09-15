@@ -7,7 +7,7 @@
             <ion-list>
                 <label class="item item-input">
                     <span class="input-label">Nom</span>
-                    <input type="text" placeholder="">
+                    <input type="text" required>
                 </label>
                 <label class="item item-select">
                     <span class="input-label">Société</span>
@@ -23,15 +23,15 @@
                 </label>
                 <label class="item item-input">
                     <span class="input-label">E-mail</span>
-                    <input type="email" ng-model="vm.email">
+                    <input id="inscriptionEmail" type="email" ng-model="vm.email" required>
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Mot de passe</span>
-                    <input type="password" ng-model="vm.password">
+                    <input type="password" ng-model="vm.password" ng-class="{pwdinvalid: !vm.matchPassword(), pwdvalid: vm.matchPassword()}" required>
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Confirmer mot de passe</span>
-                    <input type="password" ng-model="vm.confirmPassword">
+                    <input type="password" ng-model="vm.confirmPassword" ng-class="{pwdinvalid: !vm.matchPassword(), pwdvalid: vm.matchPassword()}" required>
                 </label>
             </ion-list>
             <a ui-sref="connexion" class="button button-dark  button-block" ng-click="vm.inscrire()">S'inscrire</a>

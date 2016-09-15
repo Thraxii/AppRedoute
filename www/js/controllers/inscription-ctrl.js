@@ -5,9 +5,16 @@ controllerModule.controller('InscriptionCtrl', function() {
     this.email="";
     this.password="";
     this.confirmPassword="";
+
+    this.matchPassword = function () {
+      if (this.password !== "" && this.confirmPassword !== "")
+          return this.password == this.confirmPassword;
+      else return false
+    };
     
     this.inscrire = function () {
-        console.log("Bienvenue à La Redoute !")
+        //console.log("Bienvenue à La Redoute !")
+        console.log(this.matchPassword())
     }
 
 });

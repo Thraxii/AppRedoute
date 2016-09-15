@@ -38,3 +38,19 @@ h3.titre{
     width: 300px;
     height: 28px;
 }
+
+#inscriptionEmail.ng-dirty.ng-not-empty.ng-invalid{
+    color: #a94442;
+}
+
+#inscriptionEmail.ng-dirty.ng-not-empty.ng-valid{
+    color: #039c05;
+}
+
+.ng-dirty.pwdvalid{
+    color: #039c05;
+}
+
+.ng-dirty.pwdinvalid{
+    color: #a94442;
+}

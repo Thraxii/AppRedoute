@@ -2,4 +2,8 @@
 
 controllerModule.controller('ProfilCtrl', function() {
 
-})
+    this.test = function () {
+        console.log("carotte")
+    }
+
+});
