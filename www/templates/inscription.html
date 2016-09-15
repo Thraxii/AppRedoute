@@ -9,16 +9,17 @@
                     <span class="input-label">Nom</span>
                     <input type="text" required>
                 </label>
-                <label class="item item-select">
-                    <span class="input-label">Société</span>
-                    <select>
-                        <option>La Redoute</option>
-                        <option>Relais-Colis</option>
-                        <option>Grimonprez</option>
-                        <option>Autre</option>
-                    </select>
-                </label>
-                <label class="item item-input" id="inscription-input9">
+                <div class="item item-button-right">
+                    Société
+                    <span class="affiche-selection">{{vm.societe}}</span>
+                    <button class="button button-positive" modal-select="" ng-model="vm.societe" options="vm.options" modal-title="Sélectionner société" has-search="true">
+                        <i class="icon ion-search"></i>
+                        <div class="option">
+                            {{option}}
+                        </div>
+                    </button>
+                </div>
+                <label class="item item-input">
                     <input type="text" placeholder="Si Autre, préciser la société">
                 </label>
                 <label class="item item-input">

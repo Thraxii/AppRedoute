@@ -7,7 +7,7 @@
 // 'app.controllers' is found in every file of controllers
 var controllerModule = angular.module('app.controllers', []);
 
-angular.module('app', ['ionic', 'app.controllers', 'app.services'])
+angular.module('app', ['ionic', 'ionic-modal-select', 'app.controllers', 'app.services'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {

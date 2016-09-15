@@ -6,12 +6,15 @@ controllerModule.controller('InscriptionCtrl', function() {
     this.password="";
     this.confirmPassword="";
 
+    this.societe = null;
+    this.options = ['La Redoute', 'Relais-Colis', 'Grimonprez', 'Autre'];
+
     this.matchPassword = function () {
       if (this.password !== "" && this.confirmPassword !== "")
           return this.password == this.confirmPassword;
       else return false
     };
-    
+
     this.inscrire = function () {
         //console.log("Bienvenue à La Redoute !")
         console.log(this.matchPassword())
