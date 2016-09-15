@@ -36,7 +36,8 @@ angular.module('app', ['ionic', 'app.controllers', 'app.services'])
             .state('connexion', {
                 url: '/connexion',
                 templateUrl: 'templates/connexion.html',
-                controller: 'ConnexionCtrl'
+                controller: 'ConnexionCtrl',
+                controllerAs: 'vm'
             })
 
             .state('inscription', {

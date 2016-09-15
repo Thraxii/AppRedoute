@@ -6,8 +6,8 @@ controllerModule.controller('InscriptionCtrl', function() {
     this.password="";
     this.confirmPassword="";
     
-    this.echoPassword = function () {
-        console.log(this.password)
+    this.inscrire = function () {
+        console.log("Bienvenue à La Redoute !")
     }
 
 });

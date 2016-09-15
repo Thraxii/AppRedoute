@@ -9,15 +9,15 @@
             <ion-list>
                 <label class="item item-input">
                     <span class="input-label">E-mail</span>
-                    <input type="email" placeholder="">
+                    <input type="email" ng-model="vm.email">
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Mot de passe</span>
-                    <input type="password" placeholder="">
+                    <input type="password" ng-model="vm.password">
                 </label>
             </ion-list>
             <div class="spacer grand-espace"></div>
-            <a ui-sref="tab.aide" class="button button-dark  button-block">Se connecter</a>
+            <a ui-sref="tab.aide" class="button button-dark  button-block" ng-click="vm.connecter()">Se connecter</a>
             <a ui-sref="inscription" class="button button-positive  button-block button-clear">Ou créer un compte</a>
         </form>
     </ion-content>
