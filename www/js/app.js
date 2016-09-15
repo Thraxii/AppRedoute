@@ -7,7 +7,7 @@
 // 'app.controllers' is found in every file of controllers
 var controllerModule = angular.module('app.controllers', []);
 
-angular.module('app', ['ionic', 'ionic-modal-select', 'app.controllers', 'app.services'])
+angular.module('app', ['ionic', 'ionic-modal-select', 'app.controllers'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -71,6 +71,15 @@ angular.module('app', ['ionic', 'ionic-modal-select', 'app.controllers', 'app.se
                 views: {
                     'tab-accueil': {
                         templateUrl: 'templates/flash.html'
+                    }
+                }
+            })
+
+            .state('tab.photo', {
+                url: '/photo',
+                views: {
+                    'tab-accueil': {
+                        templateUrl: 'templates/photo.html'
                     }
                 }
             })
