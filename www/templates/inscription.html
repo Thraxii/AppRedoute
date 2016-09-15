@@ -23,18 +23,18 @@
                 </label>
                 <label class="item item-input">
                     <span class="input-label">E-mail</span>
-                    <input type="email" placeholder="">
+                    <input type="email" ng-model="vm.email">
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Mot de passe</span>
-                    <input type="password" placeholder="">
+                    <input type="password" ng-model="vm.password">
                 </label>
                 <label class="item item-input">
                     <span class="input-label">Confirmer mot de passe</span>
-                    <input type="password" placeholder="">
+                    <input type="password" ng-model="vm.confirmPassword">
                 </label>
             </ion-list>
-            <a ui-sref="connexion" class="button button-dark  button-block">S'inscrire</a>
+            <a ui-sref="connexion" class="button button-dark  button-block" ng-click="vm.echoPassword()">S'inscrire</a>
         </form>
     </ion-content>
 </ion-view>

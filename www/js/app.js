@@ -30,7 +30,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.services'])
         // Ionic uses AngularUI Router which uses the concept of states
         // Learn more here: https://github.com/angular-ui/ui-router
         // Set up the various states which the app can be in.
-
+        // Each state's controller can be found in accueil-ctrl.js
         $stateProvider
 
             .state('connexion', {
@@ -42,7 +42,8 @@ angular.module('app', ['ionic', 'app.controllers', 'app.services'])
             .state('inscription', {
                 url: '/inscription',
                 templateUrl: 'templates/inscription.html',
-                controller: 'InscriptionCtrl'
+                controller: 'InscriptionCtrl',
+                controllerAs: 'vm'
             })
 
         // setup an abstract state for the tabs directive
@@ -73,15 +74,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.services'])
                 }
             })
 
-            .state('tab.confirmation', {
-                url: '/confirmation',
-                views: {
-                    'tab-accueil': {
-                        templateUrl: 'templates/confirmation.html',
-                    }
-                }
-            })
-
             .state('tab.profil', {
                 url: '/profil',
                 views: {
@@ -92,6 +84,14 @@ angular.module('app', ['ionic', 'app.controllers', 'app.services'])
                 }
             })
 
+            .state('tab.confirmation', {
+                url: '/confirmation',
+                views: {
+                    'tab-accueil': {
+                        templateUrl: 'templates/confirmation.html'
+                    }
+                }
+            })
 
             .state('tab.aide', {
                 url: '/aide',
